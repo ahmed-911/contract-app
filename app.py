@@ -8,7 +8,9 @@ import streamlit as st
 from docx import Document
 
 st.set_page_config(page_title="توليد عقود من Excel", layout="centered")
-st.title("توليد عقود تلقائي من قاعدة بيانات Excel (Word + PDF)")
+st.title("for you")
+st.image("logo.png", width=200)
+
 
 # ------------------ LibreOffice (Linux/Docker) ------------------
 SOFFICE = os.environ.get("SOFFICE_PATH", "soffice")  # داخل Docker يكون "soffice"
@@ -290,3 +292,4 @@ with colB:
             file_name="All_Contracts.zip",
             mime="application/zip"
         )
+
